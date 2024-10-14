@@ -10,7 +10,6 @@ export default function useExpenses() {
   useEffect(() => {
     const fetchAsync = async () => {
       setLoading(true)
-
       try {
         const data = await apiExpenses()
         setExpenses(data)

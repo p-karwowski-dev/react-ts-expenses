@@ -1,6 +1,7 @@
 import { Expense } from '../types/Expense'
 
 export default async function apiExpenses() {
+  console.log('FETCH')
   const response = await fetch(
     'https://expenses-backend-mu.vercel.app/expenses',
     {
